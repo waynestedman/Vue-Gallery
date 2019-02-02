@@ -1,6 +1,8 @@
 // Typography
-$baseFontFamily: 'Lato',Helvetica,Arial,sans-serif;
-// $heading-font-family: 'Lato',Helvetica,Arial,sans-serif;
+$baseFontFamily: 'Raleway', sans-serif;
+$heading-font-family: 'Montserrat', sans-serif;
+$base-font-weight: 300;
+$base-font-size: 16px;
 
 // Line height
 $base-line-height: 1.4;
@@ -13,26 +15,32 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$blue700: #004098;
-$blue600: #5C88DA;
-$blue400: #B1C9E8;
-$blue200: #DDE5ED;
-$gray900: #212121;
-$gray700: #424649;
-$gray600: #9E9E9E;
-$gray400: #BDBDBD;
-$gray200: #EEEEEE;
+$primary: #66bb6a; // green400
+$primary-lt: #98ee99;
+$primary-dk: #338a3e;
+$secondary: #3949ab; //indigo600
+$secondary-lt: #6f74dd;
+$secondary-dk: #00227b;
+$red500: #f44336;
+$grey900: #212121;
+$grey700: #424649;
+$grey600: #9E9E9E;
+$grey400: #BDBDBD;
+$grey200: #EEEEEE;
+$grey100: #f5f5f5;
+$grey50: #fafafa;
 
 // Font Colors
-$baseFont-color: $gray700;
-$action-color: $blue700;
+$baseFont-color: $grey900;
+$secondaryFont-color: $grey50;
+$action-color: $red500;
 
 // Border
-$border-color: $gray600;
+$border-color: $grey600;
 $border: 1px solid $border-color;
 
 // Background Colors
-$viewportBackground-color: #DDDDDD;
+$viewportBackground-color: $grey100;
 
 /* Focus
 $focus-outline-color: transparentize($action-color, 0.4);
