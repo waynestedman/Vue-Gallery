@@ -9,10 +9,25 @@
 </head>
 <body>
 
-<section id="app">
-  <h1>{{ title }}</h1>
-  <p>{{ message }}</p>
-</section>
+<main id="app">
+  <section class="title">
+    <h1>Vue.JS Product Gallery</h1>
+  </section>
+  <section class="products">
+    <div class="productImg">
+      <img :src="image" :alt="title, longDescript">
+    </div>
+    <div class="productInfo">
+      <h3>{{ title }}</h3>
+      <h4>{{ longDescript }}</h4>
+      <ul>
+        <li v-for="detail in details">{{ detail }}</li>
+      </ul>
+      <h5>{{ stockStatus }}</h5>
+      <p v-show="sale">On Sale Now!</p>
+    </div>
+  </div>
+</main>
 
 <script type="text/javascript" src="./lib/vue.js"></script>
 <script src="./src/js/main.js"></script>

@@ -1,9 +1,51 @@
 // Custom styles for the Vue.JS Image Gallery page
 
 #app {
-  text-align: center;
+  width: 80%;
+  margin: 0 auto;
 
-  h1 {
+  .title {
     color: $primary;
+    text-align: center;
   }
-}
+  .products {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+
+    .productImg {
+      width: 40%;
+
+      img {
+        width: 75%;
+      }
+    } // productImg
+    .productInfo {
+      width: 50%;
+
+      h3 {
+        color: $secondary;
+        margin: 1rem 0 .5rem 0;
+      }
+      h4 {
+        color: $secondary-dk;
+        margin: .5rem 0;
+      }
+      ul {
+        margin: .5rem 0;
+
+        li {
+          margin: .25rem 0;
+        }
+      }
+      h5 {
+        display: inline-block;
+      }
+      p {
+        color: $action-color;
+        display: inline-block;
+        margin: 2% 3%;
+      }
+    } // productInfo
+  } // products
+} // app
