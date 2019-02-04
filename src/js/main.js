@@ -1,15 +1,82 @@
 var app = new Vue({
-    el: '#app',
-    data: {
-        title: 'NEW Product #1',
-        image: './images/slm.jpg',
-        longDescript: 'the newest addition to our catalog!',
-        stockStatus: 'In Stock',
+  el: '#app',
+  data: {
+    products: [
+      {
+        id: 1,
+        title: "NEW Product #1",
+        image: "./images/slm.jpg",
+        longDescript: "the newest addition to our catalog!",
+        stockStatus: "In Stock",
         details: [
           "longer lashes",
           "easy clean up",
           "long lasting"
         ],
         sale: true
+      },
+      {
+        id: 2,
+        title: "Product #2",
+        image: "./images/mpp.jpg",
+        longDescript: "our best selling product!",
+        stockStatus: "In Stock",
+        details: [
+          "full lashes",
+          "easy application",
+          "long lasting"
+        ],
+        sale: false
+      },
+      {
+        id: 3,
+        title: "Product Bundle #1",
+        image: "./images/intro.jpg",
+        longDescript: "our best products, together atlast!",
+        stockStatus: "In Stock",
+        details: [
+          "for any kind of lashes",
+          "all occasions",
+          "long lasting"
+        ],
+        sale: true
+      },
+      {
+        id: 4,
+        title: "Product #2 - Special Edition",
+        image: "./images/mpp-ribbon.jpg",
+        longDescript: "our best selling product, special edition!",
+        stockStatus: "Out of Stock",
+        details: [
+          "full lashes",
+          "easy application",
+          "long lasting",
+          "limited time only!"
+        ],
+        sale: false
+      },
+      {
+        id: 5,
+        title: "NEW Product #1 - Special Edition",
+        image: "./images/slm-ribbon.jpg",
+        longDescript: "our newest addition, limited time styling!",
+        stockStatus: "In Stock",
+        details: [
+          "longer lashes",
+          "easy clean up",
+          "long lasting",
+          "limited time only!"
+        ],
+        sale: false
+      }
+    ]
+  },  // data
+  methods: {
+    prev() {
+      this.id -= 1
+    },
+    next() {
+      this.id += 1
     }
+  }
 });

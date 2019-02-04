@@ -1,0 +1,6 @@
+created: function() {
+    $.getJSON('./builds/appointments.json')
+      .done( info =>  {
+        this.theAppointments = info;
+    }); //getJSON
+  }, //created

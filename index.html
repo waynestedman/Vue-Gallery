@@ -13,11 +13,11 @@
   <section class="title">
     <h1>Vue.JS Product Gallery</h1>
   </section>
-  <section class="products">
-    <div class="productImg">
-      <img :src="image" :alt="title, longDescript">
+  <section class="productsGallery">
+    <div class="productImg" v-for="product in products" :key="products.id">
+      <img :src="product.image" :alt="product.title">
     </div>
-    <div class="productInfo">
+    <!-- <div class="productInfo">
       <h3>{{ title }}</h3>
       <h4>{{ longDescript }}</h4>
       <ul>
@@ -25,8 +25,12 @@
       </ul>
       <h5>{{ stockStatus }}</h5>
       <p v-show="sale">On Sale Now!</p>
+    </div> -->
+    <div class="nav">
+      <button class="btn-prev" v-on:click="prev">&lt; Prev</button>
+      <button class="btn-next" v-on:click="next">Next &gt;</button>
     </div>
-  </div>
+  </section>
 </main>
 
 <script type="text/javascript" src="./lib/vue.js"></script>
