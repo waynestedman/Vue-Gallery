@@ -1,16 +1,19 @@
 {
-  "name": "vue-gallery",
-  "version": "1.0.1",
-  "description": "Vue Gallery page",
+  "name": "vue-products-page",
+  "version": "1.1.1",
+  "description": "Vue Products page",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+    /* "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint" */
   },
   "author": "Wayne Stedman",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/waynestedman/Vue-Products-page.git"
   },
   "devDependencies": {
     "autoprefixer": "^9.4.6",
@@ -24,11 +27,12 @@
   },
   "dependencies": {
     "jquery": "^3.3.1",
-    "npm": "^6.4.1"
+    "npm": "^6.4.1",
+    "vue-router": "^3.0.2"
   },
   "keywords": [
     "Wayne Stedman",
-    "image gallery",
+    "products page",
     "Vue.JS"
   ]
 }

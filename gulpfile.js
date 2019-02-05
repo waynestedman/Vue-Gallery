@@ -24,7 +24,7 @@ if (env==='development') {
 	sassStyle = 'compressed';
 }
 
-jsSources = ['./src/js/*.js'];
+jsSources = ['./src/*.js'];
 sassSources = ['./src/sass/styles.scss'];
 htmlSources = ['*.html'];
 
